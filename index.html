@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: NATIONAL UNION OF CAMEROON STUDENTS, NIGERIA | CAMEROON CONSULATE | Nigeria ::</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Adjusted for better responsiveness */
+            background-color: #ecf0f3; /* Background color */
+        }
+
+        .neumorphic-container {
+            background: #dfe6e9; /* Light background color */
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 20px 20px 50px #bdc3c7, -20px -20px 50px #ffffff; /* Neumorphic shadow */
+            text-align: center;
+            width: 80%; /* Adjusted width for responsiveness */
+            max-width: 600px; /* Set max-width for responsiveness */
+            box-sizing: border-box;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block; /* Center the image */
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+
+        .countdown {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        .input-field {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            background: #dfe6e9; /* Light background color */
+            border-radius: 10px;
+            outline: none;
+            box-shadow: inset 10px 10px 20px #bdc3c7, inset -10px -10px 20px #ffffff; /* Neumorphic inset shadow */
+        }
+
+        .subscribe-button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #0592f1; /* Material Design Blue */
+            color: #ffffff;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease; #0592f1
+        }
+
+        .subscribe-button:hover {
+            background: #3498db; /* Darker shade on hover */
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .contact-button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            background: #228E20;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-button:hover {
+            background: #0490ed; /* Darker shade on hover */
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container neumorphic-container">
+        <div class="logo">
+            <img src="images/nucs.png" alt="Logo">
+        </div>
+        <h1>Coming Soon</h1>
+        <p>We're excited to announce that something amazing is in the works!</p>
+        <div class="countdown" id="countdown">Countdown to Launch: 05:00:00</div>
+        <form action="https://formspree.io/f/mwkgkpjz" method="POST" class="subscribe-form">
+            <input class="input-field" type="email" name="email" placeholder="Enter your email" required>
+            <button class="subscribe-button" type="submit">Subscribe</button>
+        </form>
+        <div class="contact-buttons">
+            <button class="contact-button" onclick="callUs()">
+                <i class="fas fa-phone"></i>&nbsp; Call Us
+        <button class="contact-button" onclick="emailUs()">
+            <i class="fas fa-envelope"></i>&nbsp; Email Us
+        </div>
+        <div class="social-icons">
+            <a href="#" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="card-body">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#aboutUsCollapse" aria-expanded="true" aria-controls="aboutUsCollapse">
+                        <span style="color: #0592f1;">About Us</span>
+                    </button>
+                </h2>
+                <hr>
+            <p>Connecting, Informing and Empowering ... <span style="color: #228E20;font-weight: bolder;">CAMEROONIAN</span> Students in Nigeria.</p>
+            <hr>
+            <p class="lead fw-normal mb-4">Join us in shaping a brighter future together!</p>
+        </div>
+    </div>
+                <!-- Bootstrap Accordion -->
+                <!-- <div class="accordion mt-2" id="organizationAccordion">
+                    <div class="card">
+                        <div class="card-header" id="aboutUsHeading">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#aboutUsCollapse" aria-expanded="true" aria-controls="aboutUsCollapse">
+                                    <span style="color: #0592f1;">About Us</span>
+                                </button>
+                            </h2>
+                        </div>
+            
+                        <div id="aboutUsCollapse" class="collapse show" aria-labelledby="aboutUsHeading" data-parent="#organizationAccordion">
+                            <div class="card-body">
+                                
+                                Connecting, Informing and Empowering ... <span style="color: #228E20;font-weight: bolder;">CAMEROONIAN</span> Students in Nigeria.
+                                <p class="lead fw-normal mb-4">Join us in shaping a brighter future together!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+</div>
+
+    <script src="js/index.js"></script>
+
+    <!-- Bootstrap JS and jQuery (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
