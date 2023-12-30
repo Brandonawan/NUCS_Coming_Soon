@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>:: NATIONAL UNION OF CAMEROON STUDENTS, NIGERIA | CAMEROON CONSULATE | Nigeria ::</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <!-- Bootstrap CSS -->
@@ -17,37 +17,70 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Adjusted for better responsiveness */
-            background-color: #ecf0f3; /* Background color */
+            background-color: #ecf0f3;
         }
-
+    
         .neumorphic-container {
-            background: #dfe6e9; /* Light background color */
+            background: #dfe6e9;
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 20px 20px 50px #bdc3c7, -20px -20px 50px #ffffff; /* Neumorphic shadow */
+            box-shadow: 20px 20px 50px #bdc3c7, -20px -20px 50px #ffffff;
             text-align: center;
-            width: 80%; /* Adjusted width for responsiveness */
-            max-width: 600px; /* Set max-width for responsiveness */
+            width: 80%;
+            max-width: 800px; /* Set max-width for larger screens */
             box-sizing: border-box;
+            height: 100%; /* Adjusted to take full height */
         }
-
+    
+        /* Media query for larger screens */
+        @media (min-width: 1200px) {
+            .neumorphic-container {
+                width: 60%; /* Adjusted width for larger screens */
+            }
+        }
+    
         .logo img {
-            width: 80px;
-            height: 80px;
+            width: 130px;
+            height: 110px;
             border-radius: 50%;
             margin: 0 auto 20px;
-            display: block; /* Center the image */
+            display: block;
         }
-
-        h2 {
+    
+        h1 {
             font-size: 2em;
             margin: 10px 0;
         }
-
+    
+        /* Media queries for different screen sizes */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+    
+        @media (min-width: 992px) {
+            h1 {
+                font-size: 3em;
+            }
+        }
+    
         .countdown {
             font-size: 1.5em;
             margin: 20px 0;
+        }
+    
+        /* Media queries for different screen sizes */
+        @media (min-width: 768px) {
+            .countdown {
+                font-size: 2em;
+            }
+        }
+    
+        @media (min-width: 992px) {
+            .countdown {
+                font-size: 2.5em;
+            }
         }
 
         .input-field {
@@ -139,10 +172,10 @@
         <div class="card-body">
                 <h2 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#aboutUsCollapse" aria-expanded="true" aria-controls="aboutUsCollapse">
-                        <span style="color: #0592f1;">About Us</span>
+                        <span  class="lead fw-bolder" style="color: #0592f1;">About Us</span>
                     </button>
                 </h2>
-                <h2 class="lead fw-bolder mb-4" style="font-weight: bolder;"> National Union Of Cameroonian Students, Nigeria</h2>
+                <h2 class="lead fw-bolder mb-4" style="font-weight: bold;"> NATIONAL UNION OF CAMEROON STUDENTS, NIGERIA</h2>
             <hr>
             <p class="lead fw-normal mb-4">Motto: <span style="color: #228E20;font-weight: bolder;"> “Unity and Service”</span></p>
             <hr>
